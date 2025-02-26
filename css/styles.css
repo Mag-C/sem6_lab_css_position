@@ -1,0 +1,199 @@
+
+/*---------- Reset ----------*/
+html{
+
+    box-sizing: border-box;
+    font: bold 62.5% "Averia Serif Libre", serif;
+
+}
+*,
+*:before,
+*::after{
+    
+    box-sizing: inherit;
+
+}
+
+/*---------- Base ----------*/
+body{
+    
+    color: #eca136;
+    background-color: rgb(9, 26,33);
+
+}
+
+a{
+
+    text-decoration: none;
+
+}
+
+.wrapper{
+
+    max-width: 1000px;
+    margin: 0 auto;
+
+}
+
+/*---------- Header ----------*/
+
+header .wrapper{
+
+    width: 1000px;
+    background-color: rgba(15, 38, 49, 95%);
+    position: fixed;
+    left:calc(50% - 500px);
+    top: 0;
+    border-radius: 0 0 20px 20px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+h1{
+    margin: 0;
+    font-size: 4rem;
+
+}
+
+/*---------- Section ----------*/
+
+.contenu{
+
+    max-width: 925px;
+    margin: 100px auto 0;
+
+}
+
+img{
+
+    max-width: 100%;
+
+}
+
+.contenu ul{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 45px;
+    list-style: none;
+    padding: 0;
+
+
+}
+
+.contenu ul li{
+
+    background-color: rgb(15, 38, 49);
+    border-radius: 10px;
+    position: relative;
+    padding: 20px;
+
+}
+
+
+
+.bouton{
+
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 5px;
+    cursor: pointer;
+ 
+}
+
+.material-symbols-outlined{
+
+    font-size: 3rem;
+
+}
+
+/*---------- Footer ----------*/
+
+footer .wrapper{
+
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(15, 38, 49, 95%);
+    border-radius: 15px 15px 0 0;
+    font-size: 16px;
+    text-transform: capitalize;
+
+}
+
+/*---------- Media ----------*/
+
+.media{
+
+    background-color: rgb(15, 38, 49);
+    border-radius: 0 15px 15px 0;
+    position: fixed;
+    top: 200px;
+    left: 0;
+
+}
+
+.media img{
+
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+
+}
+
+.media ul{
+
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+.media a:hover{
+
+    position: relative;
+    left: 3px;
+
+}
+
+/*---------- JS ----------*/
+
+img.zoom{
+
+    width: 800px;
+    height: 600px;
+    cursor: pointer;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+div.modale{
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 80%);
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.modale.visible{
+
+    display: flex;
+
+}
